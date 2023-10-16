@@ -29,4 +29,7 @@ $(document).on('ready', function () {
         autoplaySpeed: 2000,
         rtl: true,
     })
+    // Header & Footer 
+    $("#header").load("/ui/header.html");
+$("#footer").load("/ui/footer.html");
 });

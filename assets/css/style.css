@@ -725,6 +725,9 @@ header {
   padding: 0;
   text-align: center;
 }
+.sectionHead.dark h2 {
+  color: #fff;
+}
 
 .sectionHead p {
   font-size: 19px;
@@ -735,6 +738,9 @@ header {
   padding-top: 16px;
   text-align: center;
   max-width: 720px;
+}
+.sectionHead.dark p {
+  color: #fff;
 }
 
 .templatesWrapper .tamplateInnner {
@@ -902,7 +908,7 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
 }
-.supportWrapper .cardWrap .card {
+.featureCard {
   border: none;
   outline: none;
   box-shadow: none;
@@ -915,14 +921,14 @@ header {
   padding: 0 10px;
   background: transparent;
 }
-.supportWrapper .cardWrap .card .imgWrap img {
+.featureCard .imgWrap img {
   width: auto;
   height: 162px;
 }
-.supportWrapper .cardWrap .card:hover .imgWrap {
+.featureCard:hover .imgWrap {
   transform: translateY(-10px);
 }
-.supportWrapper .cardWrap h3 {
+.featureCard h3 {
   font-size: 19px;
   line-height: 1.5em;
   letter-spacing: 0.5px;
@@ -930,8 +936,11 @@ header {
   font-weight: 600;
   text-align: center;
 }
+.featureCard.dark h3 {
+  color: #fff;
+}
 
-.supportWrapper .cardWrap p {
+.featureCard p {
   font-size: 16px;
   line-height: 1.5em;
   letter-spacing: 0.5px;
@@ -940,8 +949,12 @@ header {
   padding-top: 12px;
   text-align: center;
 }
+.featureCard.dark p {
+  color: #dddee0;
+  font-weight: 300;
+}
 
-.supportWrapper .cardWrap a {
+.featureCard a {
   width: fit-content;
   margin: 24px auto 0 auto;
   font-size: 16px;
@@ -956,6 +969,9 @@ header {
   transition: background-position 0.15s linear;
   text-align: center;
 }
+.featureCard.dark a {
+  color: #fff;
+}
 
 /* testimonial */
 
@@ -969,7 +985,7 @@ header {
 }
 
 .testimonialInner .wrapper .testimonialRow .slick-arrow {
-  display: none !important;
+  display: none;
 }
 .testimonialInner .wrapper .testimonialCard {
   padding: 32px;
@@ -1097,6 +1113,11 @@ header {
   color: #424153;
   font-weight: 400;
   padding-top: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Footer */
@@ -1220,8 +1241,8 @@ footer .bottom .wrapper .newslatter .newslatterForm input[type="text"] {
   line-height: 150%;
   letter-spacing: 0.5px;
   color: #b5bac9;
-  background-color: unset !important;
-  background-clip: unset !important;
+  background-color: unset;
+  background-clip: unset;
 }
 
 footer .bottom .wrapper .newslatter .newslatterForm input[type="submit"] {
@@ -1278,4 +1299,197 @@ footer .foot .left {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+/*  */
+/*  */
+/* Legal Page */
+/*  */
+/*  */
+
+.bannerWrap {
+  max-width: none;
+  background-color: #181c25;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-image: url(https://ucarecdn.com/31587daa-8e44-4790-9561-acf3887b41c7/-/format/auto/-/preview/3000x3000/-/quality/lighter/Group%203.png);
+  background-size: contain;
+  background-position: 74% 50%;
+  background-repeat: no-repeat;
+}
+
+.bannerInnerWrap {
+  display: flex;
+}
+
+.bannerInnerWrap .left,
+.bannerInnerWrap .right {
+  flex: 1;
+}
+.bannerInnerWrap .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bannerInnerWrap .left .inner {
+  max-width: 400px;
+  margin: auto;
+}
+.bannerInnerWrap .left h1 {
+  font-size: 51px;
+  line-height: 1.2em;
+  letter-spacing: 0px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.bannerInnerWrap .left p {
+  font-size: 21px;
+  line-height: 1.5em;
+  letter-spacing: 0px;
+  color: #fff;
+  padding-top: 16px;
+  font-weight: 400;
+}
+
+.bannerInnerWrap .right .imgWrapper img {
+  width: 100%;
+}
+
+.policyWrapper {
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
+
+.policyWrapper .cardWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.policyWrapper .cardWrap .featureCard {
+  width: 30%;
+}
+
+/* Policy Ends */
+
+.additionalPolicyWrap {
+  padding-top: 108px;
+  padding-bottom: 108px;
+  background-color: #232834;
+}
+
+.additionalPolicyWrap .sectionHead h2 {
+  font-size: 38px;
+  line-height: 1.2em;
+  letter-spacing: 0px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.additionalPolicyWrap .cardWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-top: 56px;
+}
+
+.additionalPolicyWrap .cardWrap .featureCard {
+  width: 30%;
+}
+
+/*  */
+/*  */
+/* Why Us page */
+/*  */
+/*  */
+
+.WhyUsBannerSection {
+  max-width: none;
+  background-color: #070714;
+  padding: 90px 0 110px;
+  background-image: url(https://ucarecdn.com/237ed659-3b74-4273-8cb4-32c5f2fc9a8c/hero-banner-bg.svg);
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 200px) center;
+}
+.WhyUsBannerSection .inner {
+  display: flex;
+}
+
+.WhyUsBannerSection .inner .left,
+.WhyUsBannerSection .inner .right {
+  flex: 1;
+}
+
+.WhyUsBannerSection .inner .left h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  line-height: 1.2em;
+  letter-spacing: 0.25px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.WhyUsBannerSection .inner .left p {
+  margin: 0;
+  padding: 0;
+  font-size: 19px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: #b5bac9;
+  font-weight: 400;
+  padding-top: 46px;
+}
+
+.WhyUsBannerSection .inner .left .starWrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  padding-top: 32px;
+}
+
+.WhyUsBannerSection .inner .left .starWrap .imgWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3px;
+}
+
+.WhyUsBannerSection .inner .left .starWrap p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: #737a8a;
+  font-weight: 500;
+  padding-left: 0;
+}
+
+.WhyUsBannerSection .inner .left .logoWrap {
+  margin-top: 12px;
+}
+
+.WhyUsBannerSection .inner .left .logoWrap img {
+  width: 219px;
+  height: auto;
+}
+
+.WhyUsBannerSection .inner .left .btnWrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  padding-top: 32px;
+}
+.WhyUsBannerSection .inner .left .btnWrap .linBtn {
+  color: #fff;
+}
+.WhyUsBannerSection .inner .right img {
+  width: 100%;
 }
