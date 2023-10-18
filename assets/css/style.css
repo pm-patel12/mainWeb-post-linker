@@ -954,6 +954,7 @@ header {
   font-weight: 300;
 }
 
+.linkBtn,
 .featureCard a {
   width: fit-content;
   margin: 24px auto 0 auto;
@@ -1492,4 +1493,192 @@ footer .foot .left {
 }
 .WhyUsBannerSection .inner .right img {
   width: 100%;
+}
+
+.lrSection {
+  padding-top: 90px;
+}
+
+.lrSection .inner {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.lrSection.rev .inner {
+  flex-flow: row-reverse;
+}
+.lrSection .inner .right,
+.lrSection .inner .left {
+  flex: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.lrSection .inner .left .imgWrapper {
+  width: 100%;
+}
+
+.lrSection .inner .left .imgWrapper img {
+  width: 100%;
+}
+
+.lrSection .inner .right {
+  padding-left: 47px;
+}
+.lrSection .inner .right h2 {
+  font-size: 48px;
+  line-height: 1.2em;
+  letter-spacing: 0.25px;
+  color: #161723;
+  font-weight: 600;
+}
+
+.lrSection .inner .right p {
+  font-size: 19px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: #424153;
+  font-weight: 400;
+  font-family: Inter;
+  padding-top: 16px;
+}
+
+.lrSection .inner .right .quoteWrap {
+  padding-top: 50px;
+}
+
+.lrSection .inner .right .quoteWrap .quoteBlock {
+  padding: 1px;
+  position: relative;
+}
+
+.lrSection .inner .right .quoteWrap .quoteBlock:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(71, 109, 242);
+  background: linear-gradient(
+    180deg,
+    rgba(71, 109, 242, 1) 0%,
+    rgba(232, 72, 108, 1) 50%,
+    rgba(255, 187, 28, 0) 100%
+  );
+  border-radius: 6px;
+}
+.lrSection .inner .right .quoteWrap .quoteBlock:after {
+  content: url(https://ucarecdn.com/239e7c12-f006-48a0-a1c0-15d0744c579a/quotes.svg);
+  width: 55px;
+  height: 40px;
+  position: absolute;
+  top: -19px;
+  left: 32px;
+  z-index: 3;
+}
+
+.lrSection .inner .right .quoteWrap .quoteBlock .quoteInner {
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: relative;
+  z-index: 2;
+}
+.lrSection .quoteWrap .quoteBlock .quoteInner p {
+  font-size: 19px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: #161723;
+  font-weight: 400;
+}
+
+.lrSection .quoteWrap .quoteBlock .quoteInner span {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: #737a8a;
+  font-weight: 400;
+  padding-top: 1px;
+  padding-right: 0;
+  padding-bottom: 1px;
+  background-image: url(https://ucarecdn.com/b3a6291e-bf52-471c-857c-37e01921a266/-/format/auto/-/preview/3000x3000/-/quality/lighter/owner-logo.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+.lrSection .inner .right .btnWrapper {
+  margin-top: 32px;
+}
+
+.lrSection .inner .right .primaryBtn {
+  padding: 16px 32px;
+}
+
+.lrSection.pb120 {
+  padding-bottom: 120px;
+}
+
+/* features */
+
+.featuresWrap {
+}
+.featuresWrap .inner h2 {
+  font-size: 48px;
+  line-height: 1.2em;
+  letter-spacing: 0.25px;
+  color: #161723;
+  font-weight: 600;
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+}
+
+.featuresWrap .inner .cardWrap {
+  padding-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 48px 80px;
+}
+.featureCard2 .imgWrapper {
+  max-width: 40px;
+  max-height: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.featureCard2 .imgWrapper img {
+  width: 100%;
+}
+
+.featureCard2 h3 {
+  padding-top: 24px;
+  font-size: 19px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: #161723;
+  font-weight: 600;
+}
+
+.featureCard2 p {
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: #424153;
+  font-weight: 400;
+  padding-top: 12px;
+}
+
+/* singleReview */
+
+.singleReview {
+  padding-top: 90px;
+}
+
+.singleReview .inner {
+  padding-top: 30px;
 }
