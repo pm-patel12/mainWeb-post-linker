@@ -6,8 +6,8 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  /* font-family: "Inter Tight", sans-serif; */
-  font-family: "Lexend", sans-serif;
+  font-family: "Inter Tight", sans-serif;
+  /* font-family: "Lexend", sans-serif; */
 }
 *:not(.slick-track):not(.slick-list) {
   transition: all linear 0.3s;
@@ -902,7 +902,7 @@ header {
   );
   padding-top: 120px;
 }
-.supportWrapper .cardWrap {
+.supportInner .cardWrap {
   padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1681,4 +1681,199 @@ footer .foot .left {
 
 .singleReview .inner {
   padding-top: 30px;
+}
+
+.singleReview .inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.singleReview .inner .right,
+.singleReview .inner .left {
+  flex: 1;
+}
+
+.singleReview .inner .left .imgWrapper {
+  width: 100%;
+  height: 585px;
+  overflow: hidden;
+}
+.singleReview .inner .left .imgWrapper img {
+  width: 100%;
+}
+
+.singleReview .inner > .right {
+  padding: 48px;
+}
+
+.singleReview .inner .right img {
+  width: 40px;
+  height: auto;
+}
+
+.singleReview .inner .right .contentWrap {
+  padding-top: 32px;
+  padding-right: 24px;
+}
+
+.singleReview .inner .right .contentWrap > p {
+  font-size: 23px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: #161723;
+  font-weight: 400;
+}
+
+.singleReview .userWrap {
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.singleReview .userWrap .imgWrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.singleReview .userWrap .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center top;
+}
+
+.singleReview .userWrap .right p {
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: #161723;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.singleReview .userWrap .right span {
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  color: #7f7f8d;
+  font-weight: 400;
+  padding-top: 4px;
+}
+
+.singleReview .contentWrap .btnWrapper {
+  margin-top: 32px;
+}
+
+.supportSection {
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+
+/*  */
+/*  */
+/* About US */
+/*  */
+/*  */
+
+.aboutPageTitle {
+  background-color: #181c25;
+  padding-top: 101px;
+  padding-bottom: 49px;
+}
+
+.aboutPageTitle h1 {
+  font-size: 51px;
+  line-height: 1.2;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutPageBanner {
+  width: 100%;
+  background: linear-gradient(to bottom, #181c25 50%, #f2f2f3 50%);
+}
+
+.aboutPageBanner .imgWrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  max-height: 540px;
+  height: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.aboutPageBanner .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.storyLineWrap {
+  padding-bottom: 48px;
+  padding-top: 26px;
+}
+.storyLineWrap .inner {
+  display: flex;
+  align-items: flex-start;
+}
+
+.storyLineWrap .inner .card {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  padding-top: 30px;
+  padding-bottom: 0;
+  padding-right: 30px;
+}
+.storyLineWrap .inner .card .top p {
+  padding-top: 16px;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0px;
+  color: #41454f;
+  padding-bottom: 16px;
+  font-weight: 400;
+}
+.storyLineWrap .inner .card .top p span {
+  background: #f2f2f3;
+  padding-right: 16px;
+}
+
+.storyLineWrap .inner .card .top p::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffbb1c;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -24px;
+}
+
+.storyLineWrap .inner .card .top p::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #c7c8cb;
+  top: 50%;
+  left: 0;
+  z-index: -1;
 }
