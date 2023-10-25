@@ -21,6 +21,7 @@ $(document).on('ready', function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        arrows: false
     })
     $("#testimonialRow2").slick({
         slidesToShow: 5,
@@ -28,6 +29,7 @@ $(document).on('ready', function () {
         autoplay: true,
         autoplaySpeed: 2000,
         rtl: true,
+        arrows: false
     })
     // Header & Footer 
     $("#header").load("/ui/header.html");
